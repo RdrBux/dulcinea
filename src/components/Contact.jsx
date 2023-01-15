@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import H2 from './H2';
 import InputContact from './InputContact';
 import TextareaContact from './TextareaContact';
 
@@ -8,12 +9,10 @@ export default function Contact() {
   const [message, setMessage] = useState('');
 
   return (
-    <div className="bg-zinc-900 py-20 text-white">
-      <div className="container grid items-center gap-20 lg:grid-cols-2 lg:gap-40">
+    <div id="contacto" className="bg-black py-32 text-white">
+      <div className="container grid gap-20 lg:grid-cols-2 lg:gap-40">
         <div className="flex flex-col gap-6">
-          <h2 className="font-serif text-6xl lg:text-5xl xl:text-7xl">
-            CONTACTO
-          </h2>
+          <H2>Contacto</H2>
           <p className="-mt-4">
             Lorem ipsum dolor sit amet consectetur. Risus lacus semper sit
             placerat laoreet pulvinar vel.

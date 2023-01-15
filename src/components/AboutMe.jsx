@@ -1,12 +1,14 @@
 import aboutImg from '../assets/about-img.jpg';
+import H2 from './H2';
 
 export default function AboutMe() {
   return (
-    <div className="container grid items-center gap-10 py-20 lg:grid-cols-3 lg:gap-0">
+    <div
+      id="sobre-mí"
+      className="container grid items-center gap-10 py-32 lg:grid-cols-3 lg:gap-0"
+    >
       <div className="flex flex-col gap-5 lg:pr-20">
-        <h2 className="font-serif text-6xl lg:text-5xl xl:text-7xl">
-          SOBRE MÍ
-        </h2>
+        <H2>Sobre mí</H2>
         <p className="text-lg font-medium uppercase text-zinc-900">
           Lorem ipsum dolor sit amet consectetur pretium.
         </p>

@@ -1,7 +1,10 @@
-export default function NavBar() {
+export default function NavBar({ controlMenu }) {
   return (
-    <div className="container fixed left-0 right-0 flex items-center justify-between py-6 text-white mix-blend-difference">
-      <button className="flex items-center gap-2 text-lg duration-300 hover:text-rose-200">
+    <div className="container fixed left-0 right-0 z-30 flex items-center justify-between py-6 text-white mix-blend-difference">
+      <button
+        onClick={() => controlMenu(true)}
+        className="flex items-center gap-2 text-lg duration-300 hover:text-rose-200"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
