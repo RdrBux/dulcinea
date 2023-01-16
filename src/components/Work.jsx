@@ -36,7 +36,10 @@ export default function Work() {
             className="flex scale-90 flex-col shadow-lg duration-300 hover:scale-100"
           >
             <img src={balletImg} alt="" />
-            <div className="flex items-center justify-between bg-white px-6 py-4">
+            <a
+              href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
+              className="flex items-center justify-between bg-white px-6 py-4"
+            >
               <div>
                 <h4 className="font-serif text-2xl font-semibold uppercase text-black">
                   Danza Clásica
@@ -45,7 +48,7 @@ export default function Work() {
                   Ballet, clases de danza y blabla
                 </p>
               </div>
-              <button className="flex flex-col items-center text-zinc-700">
+              <div className="flex flex-col items-center text-zinc-700 duration-300 hover:text-black">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -61,8 +64,8 @@ export default function Work() {
                   />
                 </svg>
                 <p className="text-xs font-semibold">VER MÁS</p>
-              </button>
-            </div>
+              </div>
+            </a>
           </div>
 
           <div
@@ -70,7 +73,10 @@ export default function Work() {
             className="flex scale-90 flex-col shadow-lg duration-300 hover:scale-100"
           >
             <img src={parisImg} alt="" />
-            <div className="flex items-center justify-between bg-white px-6 py-4">
+            <a
+              href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
+              className="flex items-center justify-between bg-white px-6 py-4"
+            >
               <div>
                 <h4 className="font-serif text-2xl font-semibold uppercase text-black">
                   Francés
@@ -79,7 +85,7 @@ export default function Work() {
                   Francés orientado a la danza y blabla
                 </p>
               </div>
-              <button className="flex flex-col items-center text-zinc-700">
+              <div className="flex flex-col items-center text-zinc-700 duration-300 hover:text-black">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -95,8 +101,8 @@ export default function Work() {
                   />
                 </svg>
                 <p className="text-xs font-semibold">VER MÁS</p>
-              </button>
-            </div>
+              </div>
+            </a>
           </div>
         </div>
       </div>

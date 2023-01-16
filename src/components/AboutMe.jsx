@@ -24,7 +24,7 @@ export default function AboutMe() {
         </div>
       </div>
       <img src={aboutImg} alt="" />
-      <div className="w-fit lg:pl-20 xl:pl-32">
+      <div className="lg:pl-20 xl:pl-32">
         <h3 className="font-serif text-3xl font-semibold">ACÁ VA UN TÍTULO</h3>
         <hr className="my-5 border-rose-300" />
         <ul className="flex flex-col gap-5 text-zinc-700">

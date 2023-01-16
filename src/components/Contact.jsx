@@ -108,7 +108,7 @@ export default function Contact() {
             value={message}
             name="message"
           />
-          <button className="boder-rose-300 w-fit border-2 border-rose-300 px-12 py-2 font-semibold duration-300 hover:bg-rose-300">
+          <button className="boder-rose-300 border-2 border-rose-300 bg-rose-300 px-12 py-3 font-semibold text-black duration-300 hover:bg-transparent hover:text-white">
             ENVIAR
           </button>
         </div>

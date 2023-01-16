@@ -7,12 +7,12 @@ export default function Menu({ controlMenu, currentSection }) {
 
   return (
     <div>
-      <img
+      {/* <img
         className="fixed inset-0 z-40 h-screen w-screen object-cover brightness-[15%] grayscale"
         src={bgMenu}
         alt=""
-      />
-      <div className="fixed inset-0 z-50 flex h-screen w-full flex-col items-center justify-center">
+      /> */}
+      <div className="fixed inset-0 z-50 flex h-screen w-full flex-col items-center justify-center bg-[url('./assets/bg-menu.jpg')] bg-cover">
         <button
           onClick={() => controlMenu(false)}
           className="absolute top-12 right-12 duration-300 hover:rotate-90"
