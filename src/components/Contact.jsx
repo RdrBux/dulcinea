@@ -9,11 +9,14 @@ export default function Contact() {
   const [message, setMessage] = useState('');
 
   return (
-    <div id="contacto" className="bg-black py-32 text-white">
+    <div
+      id="contacto"
+      className="relative z-10 -mt-10 bg-black py-32 text-white"
+    >
       <div className="container grid gap-20 lg:grid-cols-2 lg:gap-40">
         <div className="flex flex-col gap-6">
           <H2>Contacto</H2>
-          <p className="-mt-4">
+          <p className="my-4">
             Lorem ipsum dolor sit amet consectetur. Risus lacus semper sit
             placerat laoreet pulvinar vel.
           </p>

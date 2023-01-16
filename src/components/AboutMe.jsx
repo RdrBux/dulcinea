@@ -7,8 +7,8 @@ export default function AboutMe() {
       id="sobre-mí"
       className="container grid items-center gap-10 py-32 lg:grid-cols-3 lg:gap-0"
     >
-      <div className="flex flex-col gap-5 lg:pr-20">
-        <H2>Sobre mí</H2>
+      <div className="flex flex-col gap-5 lg:pr-20 xl:pr-32">
+        <H2 wrap={false}>Sobre mí</H2>
         <p className="text-lg font-medium uppercase text-zinc-900">
           Lorem ipsum dolor sit amet consectetur pretium.
         </p>
@@ -24,7 +24,7 @@ export default function AboutMe() {
         </div>
       </div>
       <img src={aboutImg} alt="" />
-      <div className="w-fit lg:pl-20">
+      <div className="w-fit lg:pl-20 xl:pl-32">
         <h3 className="font-serif text-3xl font-semibold">ACÁ VA UN TÍTULO</h3>
         <hr className="my-5 border-rose-300" />
         <ul className="flex flex-col gap-5 text-zinc-700">

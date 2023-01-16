@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <>
       <video
-        className="absolute inset-0 h-screen w-full object-cover"
+        className="absolute inset-0 h-screen w-full object-cover grayscale"
         autoPlay
         muted
         loop
@@ -12,7 +12,7 @@ export default function Hero() {
       >
         <source src={video} type="video/mp4" />
       </video>
-      <div className="absolute inset-0 h-screen w-full bg-black/75 backdrop-blur-sm"></div>
+      <div className="absolute inset-0 h-screen w-full bg-black/50 backdrop-blur-sm"></div>
       <div className="z-10 flex h-screen select-none flex-col items-center justify-center text-white">
         <div className="relative">
           <div className="flex w-screen items-center justify-center gap-8">
