@@ -7,9 +7,9 @@ export default function AboutMe() {
       id="sobre-mí"
       className="container grid items-center gap-10 py-32 lg:grid-cols-3 lg:gap-0"
     >
-      <div className="flex flex-col gap-5 lg:pr-20 xl:pr-32">
+      <div className="flex flex-col gap-6 lg:pr-20 xl:pr-32">
         <H2 wrap={false}>Sobre mí</H2>
-        <p className="text-lg font-medium uppercase text-zinc-900">
+        <p className="text-lg font-semibold uppercase text-zinc-900">
           Lorem ipsum dolor sit amet consectetur pretium.
         </p>
         <div className="text-zinc-700">

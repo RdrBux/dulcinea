@@ -26,17 +26,12 @@ export default function Contact() {
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="h-6 w-6"
+              className="h-[22px] w-[22px]"
+              viewBox="0 0 20 20"
+              fill="currentColor"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
-              />
+              <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+              <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
             </svg>
             <p className="text-white group-hover:underline">
               dulcinea_mariana@hotmail.com
@@ -44,6 +39,8 @@ export default function Contact() {
           </a>
           <a
             href="http://www.whatsapp.com"
+            target="_blank"
+            rel="noopener noreferrer"
             className="group flex items-center gap-2 text-rose-300"
           >
             <svg
@@ -59,6 +56,8 @@ export default function Contact() {
           </a>
           <a
             href="http://www.instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
             className="group flex items-center gap-2 text-rose-300"
           >
             <svg
@@ -74,6 +73,8 @@ export default function Contact() {
           </a>
           <a
             href="http://www.youtube.com"
+            target="_blank"
+            rel="noopener noreferrer"
             className="group flex items-center gap-2 text-rose-300"
           >
             <svg

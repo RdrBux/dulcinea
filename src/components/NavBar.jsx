@@ -23,7 +23,11 @@ export default function NavBar({ controlMenu }) {
       </button>
       <ul className="flex items-center gap-4">
         <li className="duration-300 hover:text-rose-200">
-          <a href="https://www.instagram.com/">
+          <a
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -36,7 +40,11 @@ export default function NavBar({ controlMenu }) {
           </a>
         </li>
         <li className="duration-300 hover:text-rose-200">
-          <a href="https://www.youtube.com/">
+          <a
+            href="https://www.youtube.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -49,7 +57,11 @@ export default function NavBar({ controlMenu }) {
           </a>
         </li>
         <li className="duration-300 hover:text-rose-200">
-          <a href="https://www.whatsapp.com/">
+          <a
+            href="https://www.whatsapp.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"

@@ -16,7 +16,7 @@ export default function Work() {
         src={bg}
         alt=""
       />
-      <div className="container relative z-10 items-center gap-20 lg:flex">
+      <div className="container relative z-10 items-center gap-32 lg:flex">
         <div className="lg:w-1/4">
           <H2>Título sección</H2>
           <p className="mt-8">
@@ -30,7 +30,7 @@ export default function Work() {
             habitasse. Mauris lectus malesuada pellentesque sit.
           </p>
         </div>
-        <div className="grid-cols-2 gap-10 lg:grid">
+        <div className="grid-cols-2 gap-4 lg:grid">
           <div
             onMouseEnter={() => setBg(balletImg)}
             className="flex scale-90 flex-col shadow-lg duration-300 hover:scale-100"
