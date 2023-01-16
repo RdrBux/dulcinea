@@ -9,7 +9,7 @@ export default function Contact() {
   const [message, setMessage] = useState('');
 
   return (
-    <div
+    <section
       id="contacto"
       className="relative z-10 -mt-10 bg-black py-32 text-white"
     >
@@ -113,6 +113,6 @@ export default function Contact() {
           </button>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

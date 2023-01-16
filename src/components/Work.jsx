@@ -7,7 +7,7 @@ export default function Work() {
   const [bg, setBg] = useState(balletImg);
 
   return (
-    <div
+    <section
       id="trabajo"
       className="relative -m-10 overflow-hidden bg-zinc-600 p-10 py-32 text-white"
     >
@@ -100,6 +100,6 @@ export default function Work() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

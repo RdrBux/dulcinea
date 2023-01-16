@@ -3,7 +3,7 @@ import H2 from './H2';
 
 export default function AboutMe() {
   return (
-    <div
+    <section
       id="sobre-mí"
       className="container grid items-center gap-10 py-32 lg:grid-cols-3 lg:gap-0"
     >
@@ -47,6 +47,6 @@ export default function AboutMe() {
           </li>
         </ul>
       </div>
-    </div>
+    </section>
   );
 }

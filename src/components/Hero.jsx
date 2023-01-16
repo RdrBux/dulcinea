@@ -2,8 +2,8 @@ import video from '../assets/hero-video3.mp4';
 
 export default function Hero() {
   return (
-    <>
-      <video
+    <section id="inicio">
+      {/* <video
         className="absolute inset-0 h-screen w-full object-cover grayscale"
         autoPlay
         muted
@@ -11,7 +11,7 @@ export default function Hero() {
         id="myVideo"
       >
         <source src={video} type="video/mp4" />
-      </video>
+      </video> */}
       <div className="absolute inset-0 h-screen w-full bg-black/50 backdrop-blur-sm"></div>
       <div className="z-10 flex h-screen select-none flex-col items-center justify-center text-white">
         <div className="relative">
@@ -32,6 +32,6 @@ export default function Hero() {
           </div>
         </div>
       </div>
-    </>
+    </section>
   );
 }
