@@ -18,7 +18,7 @@ export default function Work() {
       />
       <div className="container relative z-10 items-center gap-32 lg:flex">
         <div className="lg:w-1/4">
-          <H2>Título sección</H2>
+          <H2>Propuesta laboral</H2>
           <p className="mt-8">
             Lorem ipsum dolor sit amet consectetur. Risus et velit convallis
             facilisi auctor platea. Ullamcorper tempus urna fermentum vel sit
@@ -38,14 +38,15 @@ export default function Work() {
             <img src={balletImg} alt="" />
             <a
               href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
-              className="flex items-center justify-between bg-white px-6 py-4"
+              className="flex items-center justify-between gap-4 bg-white px-6 py-4"
             >
               <div>
-                <h4 className="font-serif text-2xl font-semibold uppercase text-black">
+                <h4 className="font-serif text-3xl font-semibold uppercase text-black">
                   Danza Clásica
                 </h4>
                 <p className="text-sm text-zinc-700">
-                  Ballet, clases de danza y blabla
+                  Bailarina profesional, clases y seminarios de Ballet,
+                  reposiciones coreográficas
                 </p>
               </div>
               <div className="flex flex-col items-center text-zinc-700 duration-300 hover:text-black">
@@ -63,7 +64,9 @@ export default function Work() {
                     d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
                   />
                 </svg>
-                <p className="text-xs font-semibold">VER MÁS</p>
+                <p className="whitespace-nowrap text-xs font-semibold">
+                  VER MÁS
+                </p>
               </div>
             </a>
           </div>
@@ -75,14 +78,14 @@ export default function Work() {
             <img src={parisImg} alt="" />
             <a
               href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
-              className="flex items-center justify-between bg-white px-6 py-4"
+              className="flex items-center justify-between gap-4 bg-white px-6 py-4"
             >
               <div>
-                <h4 className="font-serif text-2xl font-semibold uppercase text-black">
+                <h4 className="font-serif text-3xl font-semibold uppercase text-black">
                   Francés
                 </h4>
                 <p className="text-sm text-zinc-700">
-                  Francés orientado a la danza y blabla
+                  Clases de francés y francés orientado a la danza
                 </p>
               </div>
               <div className="flex flex-col items-center text-zinc-700 duration-300 hover:text-black">
@@ -100,7 +103,9 @@ export default function Work() {
                     d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
                   />
                 </svg>
-                <p className="text-xs font-semibold">VER MÁS</p>
+                <p className="whitespace-nowrap text-xs font-semibold">
+                  VER MÁS
+                </p>
               </div>
             </a>
           </div>

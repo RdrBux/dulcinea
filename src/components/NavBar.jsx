@@ -24,7 +24,7 @@ export default function NavBar({ controlMenu }) {
       <ul className="flex items-center gap-4">
         <li className="duration-300 hover:text-rose-200">
           <a
-            href="https://www.instagram.com/"
+            href="https://www.instagram.com/dulcinea.rodriguez"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -41,7 +41,7 @@ export default function NavBar({ controlMenu }) {
         </li>
         <li className="duration-300 hover:text-rose-200">
           <a
-            href="https://www.youtube.com/"
+            href="https://www.youtube.com/@dulcinea.rodriguez"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -58,7 +58,7 @@ export default function NavBar({ controlMenu }) {
         </li>
         <li className="duration-300 hover:text-rose-200">
           <a
-            href="https://www.whatsapp.com/"
+            href="https://wa.me/+5493434759268"
             target="_blank"
             rel="noopener noreferrer"
           >
