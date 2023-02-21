@@ -1,3 +1,5 @@
+import { HashLink } from 'react-router-hash-link';
+
 export default function LiMenu({
   name,
   link,
@@ -13,7 +15,7 @@ export default function LiMenu({
       onMouseLeave={() => setHover(currentSection)}
       className="flex items-center justify-center"
     >
-      <a className="peer" href={'#' + link}>
+      <HashLink className="peer" to={'/#' + link}>
         <div className="flex w-screen items-center justify-center gap-8">
           <div
             className={`h-[1px] w-full bg-rose-300 opacity-0 duration-300 ${
@@ -33,7 +35,7 @@ export default function LiMenu({
             }`}
           ></div>
         </div>
-      </a>
+      </HashLink>
     </li>
   );
 }
