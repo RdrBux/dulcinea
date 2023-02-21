@@ -2,6 +2,7 @@ import H2 from './H2';
 import balletImg from '../assets/ballet.jpg';
 import parisImg from '../assets/paris.jpg';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Work() {
   const [bg, setBg] = useState(balletImg);
@@ -36,7 +37,8 @@ export default function Work() {
             className="flex scale-90 flex-col shadow-lg duration-300 hover:scale-100"
           >
             <img src={balletImg} alt="" />
-            <a
+            <Link
+              to="/test"
               href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
               className="flex items-center justify-between gap-4 bg-white px-6 py-4"
             >
@@ -68,7 +70,7 @@ export default function Work() {
                   VER MÁS
                 </p>
               </div>
-            </a>
+            </Link>
           </div>
 
           <div
