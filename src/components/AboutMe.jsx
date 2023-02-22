@@ -45,18 +45,21 @@ export default function AboutMe() {
         <ul className="flex flex-col gap-5 text-sm text-zinc-700">
           <li className="">
             <h4 className="text-base font-semibold uppercase text-black">
-              Bailarina de Danzas Clásicas
+              Bailarina
             </h4>
             <p className="mt-2">
-              Integrante del Ballet del Parque del Conocimiento desde 2014.
+              Egresada de la Escuela de Música, Danza y Teatro de Paraná de
+              Técnica en Danzas clásicas.
             </p>
+            <p>
+              Estudios universitarios en Troyes, Francia. Diploma de estudios
+              coreógraficos en el Conservatorio Marcell Landowski.
+            </p>
+            <p>Integrante del Ballet del Parque del Conocimiento desde 2014.</p>
             <p>
               Primera bailarina en obras como Lago de los Cisnes, Don Quijote,
-              Cascanueces, Bayadera, Chopiniana.
-            </p>
-            <p>
-              Bailarina y artista invitada en Galas nacionales e
-              internacionales.
+              Cascanueces, Bayadera, Chopiniana. Bailarina y artista invitada en
+              Galas nacionales e internacionales.
             </p>
           </li>
           <hr className="border-rose-300" />
@@ -80,7 +83,7 @@ export default function AboutMe() {
           <hr className="border-rose-300" />
           <li className="">
             <h4 className="text-base font-semibold uppercase text-black">
-              Yoga, Ayurveda y Medicina Oriental. Nutrición deportiva
+              Yoga, Ayurveda y Medicina Oriental, Nutrición deportiva
             </h4>
             <p className="mt-2">
               Profesora de Ashtanga Yoga Terapéutico y Medicina Oriental, título
