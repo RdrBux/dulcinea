@@ -7,7 +7,7 @@ export default function AboutMe() {
       id="sobre-mí"
       className="container grid items-center gap-10 py-32 lg:grid-cols-3 lg:gap-20"
     >
-      <div className="flex flex-col gap-6 lg:-mt-10">
+      <div className="flex flex-col gap-6 self-start">
         <H2 wrap={false}>Sobre mí</H2>
         <p className="text-lg font-semibold uppercase text-zinc-900">
           Lorem ipsum dolor sit amet consectetur pretium.
@@ -73,11 +73,6 @@ export default function AboutMe() {
             </p>
             <p>
               Diploma DELF B2 en Université de Reims, Francia en el año 2013.
-            </p>
-            <p>Creadora del curso Francés aplicado a la Danza.</p>
-            <p>
-              Clases presenciales y virtuales en países como Argentina, Uruguay,
-              Paraguay, Perú, México, entre otros.
             </p>
           </li>
           <hr className="border-rose-300" />
