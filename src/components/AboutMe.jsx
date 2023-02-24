@@ -7,33 +7,24 @@ export default function AboutMe() {
       id="sobre-mí"
       className="container grid items-center gap-10 py-32 lg:grid-cols-3 lg:gap-20"
     >
-      <div className="flex flex-col gap-6 self-start">
+      <div className="flex flex-col gap-6 self-start lg:mt-10">
         <H2 wrap={false}>Sobre mí</H2>
         <p className="text-lg font-semibold uppercase text-zinc-900">
           Lorem ipsum dolor sit amet consectetur pretium.
         </p>
         <div className="flex flex-col gap-4 text-zinc-700">
           <p>
-            Egresada de la Escuela de Música, Danza y Teatro de Paraná de
-            Técnica en Danzas clásicas.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci
+            aspernatur facilis illum quisquam dicta similique recusandae nisi
+            ullam voluptates perferendis mollitia soluta, quo quae dolor
+            possimus. Sunt quis ex eius!
           </p>
           <p>
-            Estudios universitarios en Troyes, Francia. Diploma de estudios
-            coreógraficos en el Conservatorio Marcell Landowski.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci
+            aspernatur facilis illum quisquam dicta similique recusandae nisi
+            ullam voluptates perferendis mollitia soluta, quo quae dolor
+            possimus. Sunt quis ex eius!
           </p>
-          <p>
-            Ganadora del primer premio regional y tercer premio nacional en el
-            Concurso Nacional ??DE QUÉ?? de Francia. Finalista concurso VKIBC
-            2015, New York.
-          </p>
-          <div>
-            Ingresó como bailarina a la compañía del Parque del Conocimiento en
-            2014. Invitada como bailarina en Galas en Argentina y Paraguay.
-          </div>
-          <div>
-            Profesora de Ashtanga Yoga Terapéutico y Medicina Oriental. Técnica
-            en Medicina Ayurveda.
-          </div>
         </div>
       </div>
       <img src={aboutImg} alt="" />
@@ -56,11 +47,11 @@ export default function AboutMe() {
               coreógraficos en el Conservatorio Marcell Landowski.
             </p>
             <p>Integrante del Ballet del Parque del Conocimiento desde 2014.</p>
-            <p>
+            {/* <p>
               Primera bailarina en obras como Lago de los Cisnes, Don Quijote,
               Cascanueces, Bayadera, Chopiniana. Bailarina y artista invitada en
               Galas nacionales e internacionales.
-            </p>
+            </p> */}
           </li>
           <hr className="border-rose-300" />
           <li className="">

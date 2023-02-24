@@ -28,3 +28,34 @@
 * {
   -webkit-tap-highlight-color: transparent;
 }
+
+/* HERO SCROLL */
+
+.scroll {
+  animation: down 2s infinite;
+  -webkit-animation: down 2s infinite;
+}
+
+@keyframes down {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translateY(10px);
+  }
+  40% {
+    transform: translate(0);
+  }
+}
+
+@-webkit-keyframes down {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translateY(15px);
+  }
+  40% {
+    transform: translate(0);
+  }
+}

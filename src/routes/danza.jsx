@@ -1,13 +1,24 @@
+import { useEffect } from 'react';
 import img from '../assets/about-img.jpg';
 
-export default function Test() {
+export default function Danza() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="container grid gap-8 py-20">
-      <div className="flex items-center gap-20">
+      <div className="flex flex-col items-center gap-8 lg:flex-row lg:gap-20">
         <div className="flex flex-col gap-8">
           <h1 className="font-serif text-6xl font-semibold uppercase lg:text-5xl xl:text-7xl">
             Danza clásica
           </h1>
+          <p className="text-zinc-700">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci
+            aspernatur facilis illum quisquam dicta similique recusandae nisi
+            ullam voluptates perferendis mollitia soluta, quo quae dolor
+            possimus. Sunt quis ex eius!
+          </p>
           <p className="text-zinc-700">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci
             aspernatur facilis illum quisquam dicta similique recusandae nisi
@@ -35,7 +46,7 @@ export default function Test() {
             </ul>
           </section>
         </div>
-        <img className="" src={img} alt="" />
+        <img className="lg:w-5/12" src={img} alt="" />
       </div>
 
       <section>
@@ -95,7 +106,7 @@ export default function Test() {
         </ul>
       </section>
 
-      <div className="grid grid-cols-2 gap-10">
+      <div className="grid gap-10 lg:grid-cols-2">
         <section>
           <h2 className="text-lg font-semibold uppercase text-zinc-900">
             Actividades, cursos y premios obtenidos:
@@ -151,10 +162,10 @@ export default function Test() {
         </section>
       </div>
 
-      <p className="mx-20 my-10 bg-rose-200 p-20 font-semibold">
-        Consultar disponibilidad y presupuesto para: Participaciones en Galas
-        como bailarina. Clases y seminarios de ballet (técnica, yoga, barra à
-        terre…) Reposiciones coreográficas.
+      <p className="mx-2 my-8 bg-rose-200 p-8 font-semibold lg:my-10 lg:mx-20 lg:p-20">
+        Consultar disponibilidad y presupuesto para: participaciones en Galas
+        como bailarina, clases y seminarios de ballet (técnica, yoga, barra à
+        terre…), reposiciones coreográficas.
       </p>
     </div>
   );

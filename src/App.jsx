@@ -5,7 +5,8 @@ import Footer from './components/Footer';
 import Menu from './components/Menu';
 import NavBar from './components/NavBar';
 import Home from './routes/home';
-import Test from './routes/test';
+import Danza from './routes/danza';
+import Frances from './routes/frances';
 
 export default function App() {
   const location = useLocation();
@@ -42,7 +43,8 @@ export default function App() {
             />
           }
         />
-        <Route path="/test" element={<Test />} />
+        <Route path="/danza" element={<Danza />} />
+        <Route path="/frances" element={<Frances />} />
       </Routes>
       <Contact />
       <Footer />
