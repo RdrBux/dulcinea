@@ -13,24 +13,31 @@ export default function Danza() {
           <h1 className="font-serif text-6xl font-semibold uppercase lg:text-5xl xl:text-7xl">
             Danza clásica
           </h1>
-          <p className="text-zinc-700">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci
-            aspernatur facilis illum quisquam dicta similique recusandae nisi
-            ullam voluptates perferendis mollitia soluta, quo quae dolor
-            possimus. Sunt quis ex eius!
-          </p>
-          <p className="text-zinc-700">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci
-            aspernatur facilis illum quisquam dicta similique recusandae nisi
-            ullam voluptates perferendis mollitia soluta, quo quae dolor
-            possimus. Sunt quis ex eius!
-          </p>
+          <div className="flex flex-col gap-4 text-zinc-700">
+            <p>
+              Contrataciones como bailarina profesional, para participar de
+              Galas, festivales y muestras de danzas. Buena adaptación a los
+              espacios, vestuarios y partenaire disponible.
+            </p>
+            <p>
+              Profesora de danzas clásicas, con una visión de crecimiento de
+              cada alumno desde un cuidadoso trabajo técnico, buscando potenciar
+              las cualidades individuales y desde el disfrute de aprender,
+              fomentando la curiosidad y la búsqueda personal entre lo técnico y
+              artístico. Clases particulares y para grupos.
+            </p>
+            <p>
+              Repositora coreográfica, adaptándome a las necesidades y deseos de
+              cada institución, trabajando de forma conjunta en las decisiones
+              con los maestros para lograr una gran puesta en escena.
+            </p>
+          </div>
 
           <section>
             <h2 className="text-lg font-semibold uppercase text-zinc-900">
               Actividad profesional
             </h2>
-            <ul className="mt-2 text-zinc-700">
+            <ul className="mt-2 list-inside list-disc text-zinc-700">
               <li>
                 Integrante como bailarina del Parque del Conocimiento - Posadas,
                 Misiones. Argentina.
@@ -42,6 +49,10 @@ export default function Danza() {
               <li>
                 Directora artística de academia Passion Ballet en Santo Tomé,
                 Corrientes.
+              </li>
+              <li>
+                Profesora danza clásica para adultos en el Parque del
+                Conocimiento.
               </li>
             </ul>
           </section>
@@ -59,6 +70,9 @@ export default function Danza() {
             Conocimiento en obras como: Majísimo, Bayadera, Quijote, Lago de los
             Cisnes, Giselle, La Fille Mal Gardée, Príncipe Igor, Chopiniana,
             Paquita, Último tango, Cascanueces, entre otros.
+          </li>
+          <li>
+            Principal en Pas de Deux Carnaval en Venecia - Noviembre 2014.
           </li>
           <li>
             Invitada especial en Gala Homenaje 40 años de la Escuela Nacional de
@@ -160,13 +174,36 @@ export default function Danza() {
             </li>
           </ul>
         </section>
+
+        <section>
+          <h2 className="mb-4 text-lg font-semibold uppercase text-zinc-900">
+            Ballet
+          </h2>
+          <iframe
+            className="w-full md:w-[560px]"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/videoseries?list=PL88f1UkiBz9b68_yz3BHRUJv8732TVH3E"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          ></iframe>
+        </section>
       </div>
 
-      <p className="mx-2 my-8 bg-rose-200 p-8 font-semibold lg:my-10 lg:mx-20 lg:p-20">
-        Consultar disponibilidad y presupuesto para: participaciones en Galas
-        como bailarina, clases y seminarios de ballet (técnica, yoga, barra à
-        terre…), reposiciones coreográficas.
-      </p>
+      <div className="mx-2 my-8 bg-rose-200 p-8 lg:my-10 lg:mx-20 lg:p-20">
+        <p className="text-xl font-semibold">
+          Consultar disponibilidad y presupuesto para:
+        </p>
+        <ul className="mt-4">
+          <li>Participaciones en Galas como bailarina.</li>
+          <li>
+            Clases y seminarios de ballet (técnica, yoga, barra à terre…).
+          </li>
+          <li>Reposiciones coreográficas.</li>
+        </ul>
+      </div>
     </div>
   );
 }

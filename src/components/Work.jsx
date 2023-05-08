@@ -17,21 +17,11 @@ export default function Work() {
         src={bg}
         alt=""
       />
-      <div className="container relative z-10 items-center gap-32 lg:flex">
-        <div className="lg:w-1/4">
+      <div className="container relative z-10 items-center gap-32">
+        <div className="text-center">
           <H2>Propuesta laboral</H2>
-          <p className="mt-8">
-            Lorem ipsum dolor sit amet consectetur. Risus et velit convallis
-            facilisi auctor platea. Ullamcorper tempus urna fermentum vel sit
-            habitasse. Mauris lectus malesuada pellentesque sit.
-          </p>
-          <p className="my-4">
-            Lorem ipsum dolor sit amet consectetur. Risus et velit convallis
-            facilisi auctor platea. Ullamcorper tempus urna fermentum vel sit
-            habitasse. Mauris lectus malesuada pellentesque sit.
-          </p>
         </div>
-        <div className="grid-cols-2 gap-4 lg:grid">
+        <div className="mt-10 grid-cols-2 gap-4 lg:grid lg:px-20 xl:px-40">
           <div
             onMouseEnter={() => setBg(balletImg)}
             className="flex scale-90 flex-col shadow-lg duration-300 hover:scale-100"
@@ -80,7 +70,7 @@ export default function Work() {
             <img src={parisImg} alt="" />
             <Link
               to="/frances"
-              className="flex items-center justify-between gap-4 bg-white px-6 py-4"
+              className="flex h-full items-center justify-between gap-4 bg-white px-6 py-4"
             >
               <div>
                 <h4 className="font-serif text-3xl font-semibold uppercase text-black">

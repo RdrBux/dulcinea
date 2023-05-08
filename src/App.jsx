@@ -12,10 +12,10 @@ export default function App() {
   const location = useLocation();
   const [showMenu, setShowMenu] = useState(false);
   const [currentSection, setCurrentSection] = useState('inicio');
+  console.log(currentSection);
 
-  useEffect(() => {
+  /* useEffect(() => {
     const sections = document.querySelectorAll('section');
-
     window.onscroll = () => {
       sections.forEach((section) => {
         const sectionTop = section.offsetTop;
@@ -24,7 +24,7 @@ export default function App() {
         }
       });
     };
-  }, []);
+  }, []); */
 
   return (
     <div className="overflow-x-hidden bg-white font-sans">
@@ -39,7 +39,7 @@ export default function App() {
             <Home
               showMenu={showMenu}
               setShowMenu={setShowMenu}
-              currentSection={currentSection}
+              setCurrentSection={setCurrentSection}
             />
           }
         />

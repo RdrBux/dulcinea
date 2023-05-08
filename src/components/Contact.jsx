@@ -16,13 +16,10 @@ export default function Contact() {
       <div className="container grid gap-20 lg:grid-cols-2 lg:gap-40">
         <div className="flex flex-col gap-6">
           <H2>Contacto</H2>
-          <p className="my-4">
-            Lorem ipsum dolor sit amet consectetur. Risus lacus semper sit
-            placerat laoreet pulvinar vel.
-          </p>
+
           <a
             href="mailto:dulcinea_mariana@hotmail.com"
-            className="group flex items-center gap-2 text-rose-300"
+            className="group mt-10 flex items-center gap-2 text-rose-300"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

@@ -34,6 +34,16 @@ export default function Frances() {
               Se trabaja con producción oral y escrita, comprensión de textos y
               audios, vocabulario general o específico, viajes.
             </p>
+            <p>Como profesora de francés aplicado a la danza di clases en:</p>
+            <ul className="list-inside list-disc">
+              <li>Cursos de Perfeccionamiento Docente de Luis Miguel Zuñiga</li>
+              <li>Cursos de francés en Artistas Onlive</li>
+              <li>Academia de Ballet de Moscú</li>
+              <li>
+                Escuela de danzas de Monterrey, México. Danzaira, Perú. Adrogué,
+                Buenos Aires. Passión Ballet, Corrientes.{' '}
+              </li>
+            </ul>
           </section>
         </div>
 
@@ -74,7 +84,7 @@ export default function Frances() {
         </p>
       </section>
 
-      <p className="mx-2 my-8 w-fit bg-rose-200 p-8 font-semibold lg:my-10 lg:mx-20 lg:p-20">
+      <p className="mx-2 my-8 w-fit bg-rose-200 p-8 text-xl font-semibold lg:my-10 lg:mx-20 lg:p-20">
         Consultar disponibilidad y presupuesto para clases individuales y
         grupales.
       </p>

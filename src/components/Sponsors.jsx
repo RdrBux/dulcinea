@@ -3,12 +3,11 @@ import ballet from '../assets/ballet.jpg';
 
 export default function Sponsors() {
   return (
-    <section id="sponsors" className="container py-32">
-      <H2>SPONSORS</H2>
+    <section id="tienda" className="container py-32">
+      <H2>TIENDA</H2>
       <p className="my-6 max-w-3xl text-zinc-700">
-        Patrocinadores que me acompañan blabla blabla consectetur adipisicing
-        elit. Velit, perferendis omnis. Quae ex aspernatur, optio quaerat
-        impedit beatae laboriosam.
+        Acá vas a encontrar mis mallas signature de marcas reconocidas en el
+        país e internacionalmente.
       </p>
       <div className="grid gap-4 lg:grid-cols-3 lg:gap-10">
         <div className="">

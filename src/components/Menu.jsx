@@ -32,7 +32,7 @@ export default function Menu({ controlMenu, currentSection }) {
         </button>
         <ul
           onClick={() => controlMenu(false)}
-          className="grid grid-rows-[repeat(4,80px)] text-center font-serif text-4xl text-white/75"
+          className="grid grid-rows-[repeat(5,80px)] text-center font-serif text-4xl text-white/75"
         >
           <LiMenu
             name="Inicio"
@@ -51,6 +51,13 @@ export default function Menu({ controlMenu, currentSection }) {
           <LiMenu
             name="Trabajo"
             link="trabajo"
+            hover={hover}
+            setHover={setHover}
+            currentSection={currentSection}
+          />
+          <LiMenu
+            name="Tienda"
+            link="tienda"
             hover={hover}
             setHover={setHover}
             currentSection={currentSection}
