@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import img from '../assets/about-img.jpg';
+import img from '../assets/propuesta-danza-edit.jpg';
 
 export default function Danza() {
   useEffect(() => {
@@ -60,7 +60,7 @@ export default function Danza() {
         <img className="lg:w-5/12" src={img} alt="" />
       </div>
 
-      <section>
+      <section className="lg:mt-8">
         <h2 className="text-lg font-semibold uppercase text-zinc-900">
           Roles destacados:
         </h2>
@@ -120,7 +120,7 @@ export default function Danza() {
         </ul>
       </section>
 
-      <div className="grid gap-10 lg:grid-cols-2">
+      <div className="grid gap-10 lg:mt-8 lg:grid-cols-2">
         <section>
           <h2 className="text-lg font-semibold uppercase text-zinc-900">
             Actividades, cursos y premios obtenidos:
@@ -177,7 +177,7 @@ export default function Danza() {
 
         <section>
           <h2 className="mb-4 text-lg font-semibold uppercase text-zinc-900">
-            Ballet
+            Lista de reproducción de Ballet
           </h2>
           <iframe
             className="w-full md:w-[560px]"
@@ -192,17 +192,14 @@ export default function Danza() {
         </section>
       </div>
 
-      <div className="mx-2 my-8 bg-rose-200 p-8 lg:my-10 lg:mx-20 lg:p-20">
+      <div className="my-8 bg-rose-200 p-8 lg:my-10 lg:p-20">
         <p className="text-xl font-semibold">
           Consultar disponibilidad y presupuesto para:
         </p>
-        <ul className="mt-4">
-          <li>Participaciones en Galas como bailarina.</li>
-          <li>
-            Clases y seminarios de ballet (técnica, yoga, barra à terre…).
-          </li>
-          <li>Reposiciones coreográficas.</li>
-        </ul>
+        <p className="mt-4">
+          Participaciones en Galas como bailarina. Clases y seminarios de ballet
+          (técnica, yoga, barra à terre…). Reposiciones coreográficas.
+        </p>
       </div>
     </div>
   );

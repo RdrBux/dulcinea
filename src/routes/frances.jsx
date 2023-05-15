@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import paris from '../assets/paris.jpg';
+import paris from '../assets/frances.jpg';
 
 export default function Frances() {
   useEffect(() => {
@@ -50,7 +50,7 @@ export default function Frances() {
         <img className="lg:w-4/12" src={paris} alt="" />
       </div>
 
-      <section className="grid gap-2 text-zinc-700">
+      <section className="grid gap-2 text-zinc-700 lg:mt-8">
         <h2 className="text-lg font-semibold uppercase text-zinc-900">
           Creadora de Francés aplicado a la Danza
         </h2>
@@ -84,7 +84,41 @@ export default function Frances() {
         </p>
       </section>
 
-      <p className="mx-2 my-8 w-fit bg-rose-200 p-8 text-xl font-semibold lg:my-10 lg:mx-20 lg:p-20">
+      <section className="flex flex-col gap-10 lg:mt-8 xl:flex-row xl:gap-24">
+        <div>
+          <h2 className="mb-4 text-lg font-semibold uppercase text-zinc-900">
+            Conociendo el paso a paso del Ballet
+          </h2>
+          <iframe
+            className="w-full md:w-[560px]"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/videoseries?list=PL88f1UkiBz9Y-AtJVPOVJHWaWYqeotZd8"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          ></iframe>
+        </div>
+
+        <div>
+          <h2 className="mb-4 text-lg font-semibold uppercase text-zinc-900">
+            Lista de reproducción de Francés
+          </h2>
+          <iframe
+            className="w-full md:w-[560px]"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/videoseries?list=PL88f1UkiBz9aaDrK6ZpoZf4JdU2Bvnl_3"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          ></iframe>
+        </div>
+      </section>
+
+      <p className="my-8 w-full bg-rose-200 p-8 text-xl font-semibold lg:my-10 lg:p-20">
         Consultar disponibilidad y presupuesto para clases individuales y
         grupales.
       </p>

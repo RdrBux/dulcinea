@@ -3,7 +3,7 @@ import Hero from '../components/Hero';
 import AboutMe from '../components/AboutMe';
 import Work from '../components/Work';
 import Sponsors from '../components/Sponsors';
-import { useLocation } from 'react-router-dom';
+import Store from '../components/Store';
 
 export default function Home({ setCurrentSection }) {
   useEffect(() => {
@@ -23,7 +23,8 @@ export default function Home({ setCurrentSection }) {
       <Hero />
       <AboutMe />
       <Work />
-      <Sponsors />
+      {/* <Sponsors /> */}
+      <Store />
     </>
   );
 }

@@ -1,4 +1,4 @@
-import aboutImg from '../assets/about-img.jpg';
+import aboutImg from '../assets/sobre-mi.jpg';
 import H2 from './H2';
 
 export default function AboutMe() {
@@ -10,8 +10,8 @@ export default function AboutMe() {
       <div className="flex flex-col gap-6 self-start lg:mt-10">
         <H2 wrap={false}>Sobre mí</H2>
         <p className="text-lg font-semibold text-zinc-900">
-          Mi nombre es Dulcinea Rodriguez, nacida en Paraná, soy bailarina de
-          ballet profesional y profesora de danzas clásicas y francés.
+          Mi nombre es Dulcinea Rodriguez, soy bailarina de ballet profesional y
+          profesora de danzas clásicas y francés, nacida en Paraná.
         </p>
         <div className="flex flex-col gap-2 text-zinc-700">
           <p>
@@ -46,7 +46,11 @@ export default function AboutMe() {
           </p>
         </div>
       </div>
-      <img className="justify-self-center" src={aboutImg} alt="" />
+      <img
+        className="justify-self-center"
+        src={aboutImg}
+        alt="bailarina profesional"
+      />
       <div className="">
         <h3 className="font-serif text-3xl font-semibold">
           FORMACIÓN PROFESIONAL

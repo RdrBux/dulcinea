@@ -1,6 +1,7 @@
 import H2 from './H2';
-import balletImg from '../assets/ballet.jpg';
-import parisImg from '../assets/paris.jpg';
+import balletImg from '../assets/propuesta-danza-edit.jpg';
+import parisImg from '../assets/propuesta-frances-edit.jpg';
+
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
