@@ -1,4 +1,5 @@
 import H2 from './H2';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import MallaOne from '../assets/tatianadancewear.jpg';
 import MallaTwo from '../assets/relevedessin.jpeg';
 import ShoesOne from '../assets/gaynorminden.jpg';
@@ -14,8 +15,16 @@ export default function Store() {
         país e internacionalmente.
       </p> */}
       <div className="" /* className="grid gap-4 lg:grid-cols-3 lg:gap-10" */>
-        <div className="items-center lg:flex">
-          <img src={MallaOne} alt="" className="lg:w-1/2 lg:p-10" />
+        <div className="grid items-center lg:grid-cols-2">
+          <div className="min-h-[400px] sm:h-[812px] md:h-[934px] lg:h-[636px] xl:h-[806px] 2xl:h-[977px]">
+            <LazyLoadImage
+              className="lg:p-10"
+              alt=""
+              src={MallaOne}
+              width="100%"
+            />
+          </div>
+          {/* <img src={MallaOne} alt="" className="lg:w-1/2 lg:p-10" /> */}
           <div className="p-4 lg:p-10">
             <h3 className="text-2xl font-semibold  text-zinc-900">
               Malla Dulcinea por Tatiana Dancewear®
@@ -52,8 +61,16 @@ export default function Store() {
           </div>
         </div>
 
-        <div className="mt-20 flex-row-reverse items-center lg:mt-0 lg:flex">
-          <img src={MallaTwo} alt="" className="lg:w-1/2 lg:p-10" />
+        <div className="mt-20 grid items-center lg:mt-0 lg:grid-cols-2">
+          <div className="min-h-[400px] sm:h-[913px] md:h-[1105px] lg:order-1 lg:h-[705px] xl:h-[897px] 2xl:h-[1089px]">
+            <LazyLoadImage
+              className="lg:p-10"
+              alt=""
+              src={MallaTwo}
+              width="100%"
+            />
+          </div>
+          {/* <img src={MallaTwo} alt="" className="lg:w-1/2 lg:p-10" /> */}
           <div className="p-4 lg:p-10">
             <h3 className="text-2xl font-semibold  text-zinc-900">
               Malla Dulcinea por Relevé Dessin®
@@ -87,8 +104,16 @@ export default function Store() {
           </div>
         </div>
 
-        <div className="mt-20 items-center lg:mt-0 lg:flex">
-          <img src={ShoesOne} alt="" className="lg:w-1/2 lg:p-10" />
+        <div className="mt-20 grid items-center lg:mt-0 lg:grid-cols-2">
+          <div className="min-h-[400px] sm:h-[871px] md:h-[1054px] lg:h-[676px] xl:h-[859px] 2xl:h-[1042px]">
+            <LazyLoadImage
+              className="lg:p-10"
+              alt=""
+              width="100%"
+              src={ShoesOne}
+            />
+          </div>
+          {/* <img src={ShoesOne} alt="" className="lg:w-1/2 lg:p-10" /> */}
           <div className="p-4 lg:p-10">
             <h3 className="text-2xl font-semibold text-zinc-900">
               Gaynor Minden Argentina

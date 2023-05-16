@@ -1,17 +1,18 @@
 import LiMenu from './LiMenu';
+import BgMenu from '../assets/menu-bg.jpg';
 import { useState } from 'react';
 
-export default function Menu({ controlMenu, currentSection }) {
+export default function Menu({ showMenu, controlMenu, currentSection }) {
   const [hover, setHover] = useState(currentSection);
 
   return (
-    <div>
-      {/* <img
-        className="fixed inset-0 z-40 h-screen w-screen object-cover brightness-[15%] grayscale"
-        src={bgMenu}
-        alt=""
-      /> */}
-      <div className="fixed inset-0 z-50 flex h-screen w-full flex-col items-center justify-center bg-[url('./assets/menu-bg.jpg')] bg-cover">
+    <div
+      className={`fixed inset-0 z-40  h-screen w-screen bg-black ${
+        showMenu ? 'block' : 'hidden'
+      }`}
+    >
+      <img src={BgMenu} alt="" className="h-full object-cover" />
+      <div className="absolute inset-0 z-50 flex  flex-col items-center justify-center bg-transparent">
         <button
           onClick={() => controlMenu(false)}
           className="absolute top-12 right-12 duration-300 hover:rotate-90"

@@ -1,5 +1,6 @@
 import { HashLink } from 'react-router-hash-link';
 import video from '../assets/hero-video3.mp4';
+import vide2 from '../assets/inicio-video.mp4';
 import scroll from '../assets/scroll.svg';
 
 export default function Hero() {

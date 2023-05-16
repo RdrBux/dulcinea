@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Route, Routes, useLocation } from 'react-router-dom';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -12,7 +12,6 @@ export default function App() {
   const location = useLocation();
   const [showMenu, setShowMenu] = useState(false);
   const [currentSection, setCurrentSection] = useState('inicio');
-  console.log(currentSection);
 
   /* useEffect(() => {
     const sections = document.querySelectorAll('section');
@@ -28,9 +27,11 @@ export default function App() {
 
   return (
     <div className="overflow-x-hidden bg-white font-sans">
-      {showMenu && (
-        <Menu controlMenu={setShowMenu} currentSection={currentSection} />
-      )}
+      <Menu
+        showMenu={showMenu}
+        controlMenu={setShowMenu}
+        currentSection={currentSection}
+      />
       <NavBar controlMenu={setShowMenu} />
       <Routes key={location.pathname} location={location}>
         <Route
