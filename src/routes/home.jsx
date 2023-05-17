@@ -2,7 +2,6 @@ import { useEffect } from 'react';
 import Hero from '../components/Hero';
 import AboutMe from '../components/AboutMe';
 import Work from '../components/Work';
-import Sponsors from '../components/Sponsors';
 import Store from '../components/Store';
 
 export default function Home({ setCurrentSection }) {
@@ -23,7 +22,6 @@ export default function Home({ setCurrentSection }) {
       <Hero />
       <AboutMe />
       <Work />
-      {/* <Sponsors /> */}
       <Store />
     </>
   );
