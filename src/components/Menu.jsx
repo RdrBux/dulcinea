@@ -1,7 +1,6 @@
 import LiMenu from './LiMenu';
 import BgMenu from '../assets/menu-bg.jpg';
-import { useState } from 'react';
-import { useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function Menu({ showMenu, controlMenu, currentSection }) {
   const [hover, setHover] = useState(currentSection);
