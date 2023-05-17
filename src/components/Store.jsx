@@ -3,6 +3,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import MallaOne from '../assets/tatianadancewear.jpg';
 import MallaTwo from '../assets/relevedessin.jpeg';
 import ShoesOne from '../assets/gaynorminden.jpg';
+import Carousel from './Carousel';
 
 export default function Store() {
   return (

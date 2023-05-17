@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import img from '../assets/propuesta-danza-edit.jpg';
+import img from '../assets/propuesta-danza-2.jpg';
 
 export default function Danza() {
   useEffect(() => {
