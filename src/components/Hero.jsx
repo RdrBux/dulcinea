@@ -7,12 +7,14 @@ export default function Hero() {
       <video
         className="absolute inset-0 h-screen w-full object-cover grayscale"
         autoPlay
+        playsInline
         muted
         loop
         id="myVideo"
       >
         <source src={video} type="video/mp4" />
       </video>
+
       <div className="backdrop-blur-sm123 absolute inset-0 h-screen w-full bg-black/60">
         <div className="absolute bottom-20 left-1/2 flex -translate-x-1/2 items-center justify-center lg:bottom-10">
           {/* <div className="flex h-12 w-8 justify-center rounded-full border border-rose-300 p-1">

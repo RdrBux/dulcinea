@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { lazy, useState } from 'react';
 import { Route, Routes, useLocation } from 'react-router-dom';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
