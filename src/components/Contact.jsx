@@ -1,12 +1,35 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import H2 from './H2';
 import InputContact from './InputContact';
 import TextareaContact from './TextareaContact';
+import emailjs from '@emailjs/browser';
 
 export default function Contact() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+
+  const form = useRef();
+
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        'service_oqzyczn',
+        'template_66nagba',
+        form.current,
+        'dg4trjhgnDVoCOmjJ'
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  }
 
   return (
     <section
@@ -90,7 +113,7 @@ export default function Contact() {
             </p>
           </a>
         </div>
-        <div className="flex flex-col gap-6">
+        <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-6">
           <h3 className="text-2xl font-medium">ENVIAR UN MENSAJE</h3>
           <InputContact
             label="Nombre completo"
@@ -113,7 +136,7 @@ export default function Contact() {
           <button className="boder-rose-300 border-2 border-rose-300 bg-rose-300 px-12 py-3 font-semibold text-black duration-300 hover:bg-transparent hover:text-white">
             ENVIAR
           </button>
-        </div>
+        </form>
       </div>
     </section>
   );
