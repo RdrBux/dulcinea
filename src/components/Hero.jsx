@@ -3,7 +3,7 @@ import video from '../assets/hero-video3.mp4';
 
 export default function Hero() {
   return (
-    <section id="inicio">
+    <section className="bg-black" id="inicio">
       <video
         className="absolute inset-0 h-screen w-full object-cover grayscale"
         autoPlay
