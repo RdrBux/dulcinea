@@ -11,8 +11,8 @@ export default function Menu({ showMenu, controlMenu, currentSection }) {
 
   return (
     <div
-      className={`fixed inset-0 z-40  h-screen w-screen bg-black ${
-        showMenu ? 'block' : 'hidden'
+      className={`fixed inset-0 z-40  h-screen w-full bg-black ${
+        showMenu ? 'flex items-center justify-center' : 'hidden'
       }`}
     >
       <img src={BgMenu} alt="" className="h-full object-cover" />

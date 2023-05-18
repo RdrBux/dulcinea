@@ -6,6 +6,11 @@ export default function Danza() {
     window.scrollTo(0, 0);
   }, []);
 
+  useEffect(() => {
+    const preloader = document.getElementById('preloader');
+    preloader.style.display = 'none';
+  }, []);
+
   return (
     <div className="container grid gap-8 py-20">
       <div className="flex flex-col items-center gap-8 lg:flex-row lg:gap-20">
@@ -13,7 +18,7 @@ export default function Danza() {
           <h1 className="font-serif text-6xl font-semibold uppercase lg:text-5xl xl:text-7xl">
             Danza clásica
           </h1>
-          <hr className="border-rose-300 lg:hidden" />
+          <hr className="border-rose-200" />
           <div className="flex flex-col gap-4 text-zinc-700">
             <p>
               Contrataciones como bailarina profesional, para participar de

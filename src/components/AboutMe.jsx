@@ -56,7 +56,7 @@ export default function AboutMe() {
         <h3 className="font-serif text-3xl font-semibold">
           FORMACIÓN PROFESIONAL
         </h3>
-        <hr className="my-5 border-rose-300" />
+        <hr className="my-5 border-rose-200" />
         <ul className="flex flex-col gap-5 text-sm text-zinc-700">
           <li className="">
             <h4 className="text-base font-semibold uppercase text-black">
@@ -70,7 +70,7 @@ export default function AboutMe() {
               internacionales.
             </p>
           </li>
-          <hr className="border-rose-300" />
+          <hr className="border-rose-200" />
           <li className="">
             <h4 className="text-base font-semibold uppercase text-black">
               Profesora de francés
@@ -87,7 +87,7 @@ export default function AboutMe() {
               Diploma DELF B2 en Université de Reims, Francia en el año 2013.
             </p>
           </li>
-          <hr className="border-rose-300" />
+          <hr className="border-rose-200" />
           <li className="">
             <h4 className="text-base font-semibold uppercase text-black">
               Yoga, Ayurveda y Medicina Oriental. Nutrición deportiva.

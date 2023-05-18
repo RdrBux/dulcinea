@@ -47,7 +47,7 @@ export default function Contact() {
   return (
     <section
       id="contacto"
-      className="relative z-10 -mt-10 bg-black py-32 text-white"
+      className="relative z-10 -mt-10 bg-[#09090B] py-32 text-white"
     >
       <div className="container grid gap-20 lg:grid-cols-2 lg:gap-40">
         {showAlert && <AlertContact isError={isError} />}

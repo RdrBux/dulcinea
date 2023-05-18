@@ -1,4 +1,4 @@
-import { lazy, useState } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { Route, Routes, useLocation } from 'react-router-dom';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -13,17 +13,16 @@ export default function App() {
   const [showMenu, setShowMenu] = useState(false);
   const [currentSection, setCurrentSection] = useState('inicio');
 
-  /* useEffect(() => {
-    const sections = document.querySelectorAll('section');
-    window.onscroll = () => {
-      sections.forEach((section) => {
-        const sectionTop = section.offsetTop;
-        if (window.scrollY >= sectionTop - 60) {
-          setCurrentSection(section.getAttribute('id'));
-        }
-      });
+  const resetWindowScrollPosition = useCallback(
+    () => window.scrollTo(0, 0),
+    []
+  );
+
+  useEffect(() => {
+    window.onbeforeunload = function () {
+      resetWindowScrollPosition();
     };
-  }, []); */
+  }, [resetWindowScrollPosition]);
 
   return (
     <div className="overflow-x-hidden bg-white font-sans">

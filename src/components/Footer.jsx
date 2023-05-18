@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <div className="bg-black text-white">
+    <div className="bg-[#09090B] text-white">
       <hr className="container border-rose-300" />
       <footer className="container flex flex-col items-center justify-center py-4 text-sm md:flex-row md:gap-2 lg:text-base">
         <p>Dulcinea Rodríguez © 2023.</p>

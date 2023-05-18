@@ -6,6 +6,11 @@ export default function Frances() {
     window.scrollTo(0, 0);
   }, []);
 
+  useEffect(() => {
+    const preloader = document.getElementById('preloader');
+    preloader.style.display = 'none';
+  }, []);
+
   return (
     <div className="container grid gap-8 py-20">
       <div className="flex flex-col items-center gap-10 lg:flex-row lg:gap-24">
@@ -13,7 +18,7 @@ export default function Frances() {
           <h1 className="font-serif text-6xl font-semibold uppercase lg:text-5xl xl:text-7xl">
             Francés
           </h1>
-          <hr className="border-rose-300 lg:hidden" />
+          <hr className="border-rose-200" />
           <section className="grid gap-2 text-zinc-700">
             <h2 className="text-lg font-semibold uppercase text-zinc-900">
               Profesora de francés y francés aplicado a la danza.
