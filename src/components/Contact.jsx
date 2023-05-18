@@ -2,12 +2,15 @@ import { useState, useRef } from 'react';
 import H2 from './H2';
 import InputContact from './InputContact';
 import TextareaContact from './TextareaContact';
+import AlertContact from '../components/AlertContact';
 import emailjs from '@emailjs/browser';
 
 export default function Contact() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+  const [showAlert, setShowAlert] = useState(false);
+  const [isError, setIsError] = useState(false);
 
   const form = useRef();
 
@@ -23,12 +26,22 @@ export default function Contact() {
       )
       .then(
         (result) => {
-          console.log(result.text);
+          setIsError(false);
+          setShowAlert(true);
         },
         (error) => {
-          console.log(error.text);
+          setIsError(true);
+          setShowAlert(true);
         }
       );
+    setShowAlert(true);
+    setTimeout(() => {
+      setShowAlert(false);
+    }, 3000);
+
+    setName('');
+    setEmail('');
+    setMessage('');
   }
 
   return (
@@ -37,6 +50,7 @@ export default function Contact() {
       className="relative z-10 -mt-10 bg-black py-32 text-white"
     >
       <div className="container grid gap-20 lg:grid-cols-2 lg:gap-40">
+        {showAlert && <AlertContact isError={isError} />}
         <div className="flex flex-col gap-6">
           <H2>Contacto</H2>
 
