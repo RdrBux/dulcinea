@@ -19,9 +19,9 @@ export default function Work() {
         alt=""
       />
       <div className="container relative z-10 items-center gap-32">
-        <div className="text-center">
-          <H2>Propuesta laboral</H2>
-        </div>
+        <h2 className="-mt-8 text-center font-serif text-4xl font-semibold uppercase sm:text-6xl lg:text-5xl xl:text-7xl">
+          Contrataciones
+        </h2>
         <div className="mt-10 grid-cols-2 gap-4 lg:grid lg:px-20 xl:px-40">
           <div
             onMouseEnter={() => setBg(balletImg)}

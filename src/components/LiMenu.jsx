@@ -24,7 +24,7 @@ export default function LiMenu({
           ></div>
           <div
             className={`whitespace-nowrap uppercase duration-300 ${
-              active ? 'text-5xl text-white' : ''
+              active ? 'text-4xl text-white' : ''
             }`}
           >
             {name}
