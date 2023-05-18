@@ -13,6 +13,7 @@ export default function Danza() {
           <h1 className="font-serif text-6xl font-semibold uppercase lg:text-5xl xl:text-7xl">
             Danza clásica
           </h1>
+          <hr className="border-rose-300 lg:hidden" />
           <div className="flex flex-col gap-4 text-zinc-700">
             <p>
               Contrataciones como bailarina profesional, para participar de
@@ -57,7 +58,11 @@ export default function Danza() {
             </ul>
           </section>
         </div>
-        <img className="lg:w-5/12" src={img} alt="" />
+        <img
+          className="lg:w-5/12"
+          src={img}
+          alt="Dulcinea Rodríguez bailarina profesional"
+        />
       </div>
 
       <section className="lg:mt-8">

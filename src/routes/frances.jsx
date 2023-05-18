@@ -13,6 +13,7 @@ export default function Frances() {
           <h1 className="font-serif text-6xl font-semibold uppercase lg:text-5xl xl:text-7xl">
             Francés
           </h1>
+          <hr className="border-rose-300 lg:hidden" />
           <section className="grid gap-2 text-zinc-700">
             <h2 className="text-lg font-semibold uppercase text-zinc-900">
               Profesora de francés y francés aplicado a la danza.
@@ -47,7 +48,11 @@ export default function Frances() {
           </section>
         </div>
 
-        <img className="lg:w-4/12" src={paris} alt="" />
+        <img
+          className="lg:w-4/12"
+          src={paris}
+          alt="Dulcinea Rodríguez París Francia"
+        />
       </div>
 
       <section className="grid gap-2 text-zinc-700 lg:mt-8">

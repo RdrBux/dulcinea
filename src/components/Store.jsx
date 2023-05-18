@@ -1,7 +1,9 @@
 import H2 from './H2';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import MallaOne from '../assets/tatianadancewear.jpg';
-import MallaTwo from '../assets/relevedessin.jpeg';
+import MallaOneFront from '../assets/tatianadancewear-front.jpg';
+import MallaOneBack from '../assets/tatianadancewear-back.jpg';
+import MallaTwoFront from '../assets/relevedessin-front.jpeg';
+import MallaTwoBack from '../assets/relevedessin-back.jpeg';
 import ShoesOne from '../assets/gaynorminden.jpg';
 import Carousel from './Carousel';
 
@@ -17,12 +19,18 @@ export default function Store() {
       </p> */}
       <div className="" /* className="grid gap-4 lg:grid-cols-3 lg:gap-10" */>
         <div className="grid items-center lg:grid-cols-2">
-          <div className="min-h-[400px] sm:h-[812px] md:h-[934px] lg:h-[636px] xl:h-[806px] 2xl:h-[977px]">
-            <LazyLoadImage
+          <div className="min-h-[400px] items-center sm:h-[847px] md:mr-10 md:h-[975px] lg:m-0 lg:h-[580px] lg:p-10 xl:h-[756px] 2xl:h-[936px]">
+            {/* <LazyLoadImage
               className="lg:p-10"
               alt=""
               src={MallaOne}
               width="100%"
+            /> */}
+            <Carousel
+              imgOne={MallaOneFront}
+              imgTwo={MallaOneBack}
+              altOne="Malla Tatiana Dancewear"
+              altTwo="Malla Tatiana Dancewear"
             />
           </div>
           {/* <img src={MallaOne} alt="" className="lg:w-1/2 lg:p-10" /> */}
@@ -62,13 +70,19 @@ export default function Store() {
           </div>
         </div>
 
-        <div className="mt-20 grid items-center lg:mt-0 lg:grid-cols-2">
-          <div className="min-h-[400px] sm:h-[913px] md:h-[1105px] lg:order-1 lg:h-[705px] xl:h-[897px] 2xl:h-[1089px]">
-            <LazyLoadImage
+        <div className="mt-20 grid items-center lg:grid-cols-2">
+          <div className="min-h-[400px] sm:h-[871px] md:h-[1054px] lg:order-1 lg:h-[592px] lg:p-10 xl:h-[779px] 2xl:h-[962px]">
+            {/* <LazyLoadImage
               className="lg:p-10"
               alt=""
               src={MallaTwo}
               width="100%"
+            /> */}
+            <Carousel
+              imgOne={MallaTwoFront}
+              imgTwo={MallaTwoBack}
+              altOne="Malla Relevé Dessin"
+              altTwo="Malla Relevé Dessin"
             />
           </div>
           {/* <img src={MallaTwo} alt="" className="lg:w-1/2 lg:p-10" /> */}
@@ -105,16 +119,15 @@ export default function Store() {
           </div>
         </div>
 
-        <div className="mt-20 grid items-center lg:mt-0 lg:grid-cols-2">
+        <div className="mt-20 grid items-center lg:grid-cols-2">
           <div className="min-h-[400px] sm:h-[871px] md:h-[1054px] lg:h-[676px] xl:h-[859px] 2xl:h-[1042px]">
             <LazyLoadImage
               className="lg:p-10"
-              alt=""
+              alt="Zapatillas danza Gaynor Minden Argentina"
               width="100%"
               src={ShoesOne}
             />
           </div>
-          {/* <img src={ShoesOne} alt="" className="lg:w-1/2 lg:p-10" /> */}
           <div className="p-4 lg:p-10">
             <h3 className="text-2xl font-semibold text-zinc-900">
               Gaynor Minden Argentina

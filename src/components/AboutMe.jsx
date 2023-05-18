@@ -9,6 +9,7 @@ export default function AboutMe() {
     >
       <div className="flex flex-col gap-6 self-start lg:mt-10">
         <H2 wrap={false}>Sobre mí</H2>
+        <hr className="border-rose-300 xl:hidden" />
         <p className="text-lg font-semibold text-zinc-900">
           Mi nombre es Dulcinea Rodriguez, soy bailarina de ballet profesional y
           profesora de danzas clásicas y francés, nacida en Paraná.
@@ -49,7 +50,7 @@ export default function AboutMe() {
       <img
         className="justify-self-center"
         src={aboutImg}
-        alt="bailarina profesional"
+        alt="Dulcinea Rodríguez bailarina profesional"
       />
       <div className="">
         <h3 className="font-serif text-3xl font-semibold">

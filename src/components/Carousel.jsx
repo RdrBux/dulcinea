@@ -1,7 +1,8 @@
 import { useRef } from 'react';
 import { useState } from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
-export default function Carousel({ imgOne, imgTwo }) {
+export default function Carousel({ imgOne, imgTwo, altOne, altTwo }) {
   const [carouselIndex, setCarouselIndex] = useState(0);
   const imagesRef = useRef();
 
@@ -50,20 +51,20 @@ export default function Carousel({ imgOne, imgTwo }) {
   );
 
   return (
-    <div className="relative overflow-hidden lg:m-10">
+    <div className="relative overflow-hidden">
       <div ref={imagesRef} className="flex duration-300">
-        <img className="" src={imgSrcArr[0]} alt="" />
-        <img className="" src={imgSrcArr[1]} alt="" />
+        <LazyLoadImage src={imgOne} alt={altOne} width="100%" />
+        <LazyLoadImage src={imgTwo} alt={altTwo} width="100%" />
       </div>
       <button
         onClick={handleClickLeft}
-        className="absolute top-1/2 -translate-y-1/2 bg-black/30 py-1 text-white/75"
+        className="absolute top-1/2 -translate-y-1/2 bg-black/25 py-1 text-white/60"
       >
         {chevron}
       </button>
       <button
         onClick={handleClickRight}
-        className="absolute top-1/2 right-0 -translate-y-1/2 bg-black/30 py-1 text-white/75"
+        className="absolute top-1/2 right-0 -translate-y-1/2 bg-black/25 py-1 text-white/60"
       >
         <div className="rotate-180">{chevron}</div>
       </button>

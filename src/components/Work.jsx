@@ -27,7 +27,10 @@ export default function Work() {
             onMouseEnter={() => setBg(balletImg)}
             className="flex scale-90 flex-col shadow-lg duration-300 hover:scale-100"
           >
-            <img src={balletImg} alt="" />
+            <img
+              src={balletImg}
+              alt="Dulcinea Rodríguez propuesta laboral ballet"
+            />
             <Link
               to="/danza"
               className="flex items-center justify-between gap-4 bg-white px-6 py-4"
@@ -68,7 +71,10 @@ export default function Work() {
             onMouseEnter={() => setBg(parisImg)}
             className="flex scale-90 flex-col shadow-lg duration-300 hover:scale-100"
           >
-            <img src={parisImg} alt="" />
+            <img
+              src={parisImg}
+              alt="Dulcinea Rodríguez propuesta laboral idioma francés"
+            />
             <Link
               to="/frances"
               className="flex h-full items-center justify-between gap-4 bg-white px-6 py-4"
