@@ -19,7 +19,11 @@ export default function Work() {
         alt=""
       />
       <div className="container relative z-10 items-center gap-32">
-        <h2 className="-mt-8 text-center font-serif text-[9vw] font-semibold uppercase sm:text-6xl lg:text-5xl xl:text-7xl">
+        <h2
+          className={`-mt-8 text-center font-serif ${
+            navigator.userAgent.includes('Instagram') ? 'text-3xl' : 'text-4xl'
+          } font-semibold uppercase sm:text-6xl lg:text-5xl xl:text-7xl`}
+        >
           Contrataciones
         </h2>
         <div className="mt-10 grid-cols-2 gap-4 lg:grid lg:px-20 xl:px-40">
